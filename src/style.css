@@ -1,0 +1,755 @@
+/* Global */
+*{margin:0;padding:0}
+
+img{
+    width:100%
+}
+a{
+    text-decoration: none
+}
+body{
+    font-family: Lora;
+}
+.sp{
+    padding: 72px 0
+}
+.sticky {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left:0;
+    transform: translateX(-50%);
+    background: black;
+    width: 100%;
+    margin: 0 !important;
+    padding: 16px 0 !important;
+    /* transition: padding .3s; */
+    animation: slide .3s linear forwards;
+}
+
+@keyframes slide{
+  from{
+    transform: translatey(-80px)
+  }
+  to{
+    transform: translatey(0px)
+  }
+}
+
+.white{
+    color:white !important
+}
+.sc-ifAKCX.cXcRCo{
+    z-index: 10;
+    box-shadow: 1px 1px 13px -10px black;
+}
+.visible{
+    visibility:visible;
+    opacity: 1;
+    transition:opacity 1s
+}
+.hidden{
+    visibility:hidden;
+    opacity: 0;
+}
+.pagePadding{
+    padding-top: 50px
+}
+
+.react-sanfona-item-expanded h2 {
+    background: black;
+    color: white;
+}
+
+/* ================== */
+/*      HEADER        */
+/* ================== */
+
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: white;
+    z-index: 5;
+    padding-top: 16px;
+}
+
+.info{
+    font-family: Lora;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 179px;
+}
+
+.details{
+    margin-top: 16px
+}
+.address{
+    float: left;
+    margin-left: 15px;
+}
+
+.phone{
+    float: right;
+    margin-right: 15px;
+}
+
+.menu_logo {
+    text-align: center;
+}
+
+.menu_logo img {
+    width: auto;
+}
+
+.menu {
+    margin-top: 24px;
+}
+.menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-family: Poppins, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0px 24px;
+    display: block;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: Poppins, sans-serif;
+}
+
+.menu li a:hover{
+    color:red;
+    transition:all 1s
+}
+
+/* ================== */
+/*      SLIDER AREA       */
+/* ================== */
+
+.slider_area{
+    overflow: hidden;
+}
+
+
+.slider,.content {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(23,23,99,0.1);
+}
+
+.slide_content,.content_details {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    width: 100%
+}
+
+.slide_content h1,
+.s_heading,
+.content_details h1 {
+    font-size: 108px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+}
+
+.slide_content p,.content_details p {
+    font-weight: 700;
+}
+
+/* .slide_content a,
+.about_content a,
+.Btn,
+.content_details a */
+
+
+.Btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    color: black;
+    border: 6px solid black;
+    padding: 10px 24px;
+    display: inline-block;
+    margin-top: 24px;
+    cursor:pointer
+}
+.Btn:hover{
+    text-decoration: none;
+    color:black
+}
+.whiteBtn:hover{
+    color:white
+}
+.whiteBtn{
+    color: white;
+    border: 6px solid white;
+}
+
+/* ================== */
+/*      FEATURE AREA       */
+/* ================== */
+
+.feature_area {
+    padding: 54px 0;
+    background: #f4f4f4
+}
+.single_fature{}
+
+.single_fature img,.dish img{
+    position: absolute;
+    width: 52px;
+}
+
+.single_fature .details {
+    margin-left: 64px;
+    margin-top: 0;
+}
+
+.details{}
+
+.details h4,.footer_content h4,.accordian h2{
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+}
+
+.details p {
+    margin: 0;
+}
+
+/* ================== */
+/*      ABOUT AREA        */
+/* ================== */
+
+.about_area{}
+.about_content{}
+
+
+.word {
+    margin: 0 !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.about_content p{
+    margin-bottom: 24px;
+}
+.s_heading {
+    font-size: 54px;
+    color: black;
+    position: relative;
+    margin-bottom: 34px;
+    display:inline-block
+}
+
+.s_heading::before,
+.s_heading::after{
+    content: "";
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+}
+
+.s_heading::after{
+    height: 5px;
+    bottom:-7px
+}
+
+.about_area .about_content a,.sendBtn{
+    border-color: black;
+    color: black
+}
+
+.sub_heading{
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+
+/* ================== */
+/*      PARALAX AREA        */
+/* ================== */
+
+.paralax_area,.open_ours,.invite_area {
+    background: url(https://matchthemes.com/demohtml/dina/images/home/about-4.jpg) center center /cover;
+    text-align: center;
+    height: 500px;
+    position: relative;
+    background-attachment: fixed !important;
+}
+
+.parax_content{
+    position: absolute;
+    width:100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.parax_content img {
+    width: auto;
+}
+
+
+/* ================== */
+/*      MENU AREA        */
+/* ================== */
+
+.s_heading::before,
+.s_heading::after{
+    left: 50% !important;
+    transform: translateX(-50%);
+}
+.react-sanfona-item-body-wrapper,.react-sanfona-item{
+    margin-top:25px
+}
+
+
+.menu_area{}
+.menu_content{}
+.menuu_header_content{}
+.menuu_header_content p{}
+.menuu_header_content p{}
+.menuu_header_content h2{}
+
+.accordian{
+    margin-top: 36px;
+    text-align:left
+}
+.accordian h2 {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 8px 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 5px solid #252525;
+    margin-bottom: 24px;
+}
+
+.accordian h2:hover{
+    color: white;
+    background: black;
+    transition: all 0.3s
+}
+
+.dish_info h6 span:last-child {
+    float: right;
+}
+
+.dish {
+    margin-bottom: 30px;
+    padding:0 10px
+}
+
+.dish img {
+    border-radius: 50%;
+}
+
+.dish_info {
+    margin-left: 66px;
+}
+
+.dish_info h6 {
+    font-weight: bold;
+}
+.dish_info p{
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+/* ===========================*/
+/*      OPEN OURS AREA        */
+/* ========================== */
+/* .parax_content.about_content .s_heading,.invite_content.parax_content .s_heading{
+    color:white
+} */
+
+.parax_content.about_content h2::before,
+.parax_content.about_content h2::after{
+    background: white
+}
+
+.open_ours{
+    color:white;
+    background: url(https://matchthemes.com/demohtml/dina/images/home/about-5.jpg) center center /cover;
+}
+
+
+/* ===========================*/
+/*      OPEN OURS AREA        */
+/* ========================== */
+
+.wine_content.about_content h2::before,
+.wine_content.about_content h2::after{
+    right:0;
+    left:auto
+}
+.wine_content h2{}
+.wine_content {
+    padding-top: 55px;
+}
+
+
+/* ===========================*/
+/*      INVITE AREA           */
+/* ========================== */
+
+.invite_area{
+    color:white;
+    background: url(https://matchthemes.com/demohtml/dina/images/home/about-9.jpg) center center /cover;
+}
+
+.invite_area p:last-child{
+    width: 33%;
+    margin: 0 auto;
+}
+
+/* ===========================*/
+/*      FOOTER AREA           */
+/* ========================== */
+
+.footer_text{
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 16px;   
+}
+.footer_content p{
+    margin-bottom: 5px
+}
+
+.social_links {
+    margin-top: 54px;
+}
+.social_links li {
+    list-style: none;
+    display: inline-block;
+}
+.social_links a {
+    border: 2px solid #e5e5e5;
+    color: #252525;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    display: inline-block;
+    margin:0 4px
+}
+
+footer.sp{
+    padding-bottom:25px
+}
+
+
+/* ===========================*/
+/*      CONTACT AREA           */
+/* ========================== */
+
+.content{
+    height: 450px;
+    position: relative;
+    color:white;
+    background: url(https://matchthemes.com/demohtml/dina/images/top-headers/reservation-image.jpg) center center /cover;
+}
+
+.content_details h1{
+    color:white;
+    font-size: 54px
+}
+
+.content_details p{}
+
+.form_group{}
+.form_group input,.form_group textarea,select {
+    margin-bottom: 16px;
+    padding: 8px;
+    width: 100%;
+    border: 2px solid #e5e5e5;
+}
+.form_group label{
+    text-transform: uppercase
+}
+
+.contact_us_area.sp{
+    padding-bottom: 0;
+    padding-top: 20px
+}
+.small{
+    font-size: 36px
+}
+select{
+    height: 44px;
+    width: 100%;
+}
+.form_group textarea{}
+
+
+
+/* ===========================*/
+/*      MENU AREA           */
+/* ========================== */
+
+.menu_header .content{
+    background: url(https://matchthemes.com/demohtml/dina/images/top-headers/top-img-5.jpg) center center /cover;
+}
+
+.menu_area .content_details{
+    z-index: 4;
+}
+.menu_area .content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.menu_area.accordian h2:hover{
+    color: black
+}
+.menu_area.accordian h2 {
+    background: none;
+    border-color: transparent;
+    text-align: center
+}
+.menu_header .content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 00.2;
+}
+
+
+/* ==================================== */
+/*           RESERVATION AREA           */
+/* ==================================== */
+option[disabled]{
+    background: grey
+}
+.reservation_form a{
+    margin-left: 15px
+}
+
+
+/* ==================================== */
+/*           MENU AREA           */
+/* ==================================== */
+
+.display_category_recipes .dish{
+    padding:0 60px
+}
+
+/* ==================================== */
+/*           MODAL                      */
+/* ==================================== */
+
+.Modal {
+    width: 240px;
+    background: white;
+    box-shadow: 1px 1px 8px -2px rgba(77,76,82,0.4);
+    padding: 74px;
+    box-sizing: content-box;
+    text-align: center;
+    word-spacing: 3px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    opacity:0;
+    visibility: hidden;
+    transition:opacity 0.5s,visibility 0.5s;
+  }
+
+
+/* ==================================== */
+/*           MODAL CSS                      */
+/* ==================================== */ 
+
+
+.alert_Title {
+    margin-bottom: 15px;
+    font-family: Poppins, sans-serif;
+    font-size: 33px;
+}
+  
+  .Modal i{
+    font-size: 49px;
+  }
+  
+  .fadein{
+    visibility: visible;
+    opacity:1;
+  }
+
+.menuIcon i {
+    font-size: 29px;
+} 
+
+.sticky .details{
+    display: none;
+}
+.menuIcon {
+    text-align: right;
+    padding: 0 15px;
+    display:none;
+}
+
+/* ==================================== */
+/*           RESPONSIVE CSS                      */
+/* ==================================== */
+
+  @media (max-width: 1200px) {
+    .sPhoto{
+        margin-top: 50px
+    }
+    .invite_area p:last-child {
+        width: 500px;
+    }
+  }
+
+
+  @media (max-width: 992px) {
+    .display_category_recipes .dish {
+        padding: 0 10px;
+    }
+    .accordian h2 {
+        font-size: 25px;
+    }
+    .details h4, .footer_content h4{
+        font-size: 17px;
+    }
+    .footer_content p{
+        font-size: 14px
+    }
+    .about_area .sPhoto{
+        margin-bottom: 25px
+    }
+    .about_area .order{
+        order: 2
+    }
+    .wine_content,.about_content{
+        text-align: center !important
+    }
+    .sPhoto{
+        margin-top: 0;
+    }
+    .col-md-6.custom{
+        margin-left:25%
+    }
+    .s_heading {
+        font-size: 43px;
+    }
+    .slide_content h1{
+        font-size: 90px;
+    }
+    .page.s_heading {
+        font-size: 35px;
+    }
+
+   }
+
+   @media (max-width: 768px) { 
+        .accordian h2 {
+            font-size: 20px;
+        }
+        .Btn {
+            font-weight: 700;
+            font-size: 12px;
+        }
+        .menuIcon{
+            display: block;
+            position: absolute;
+            top: 16px;
+            right: 15px;
+        }
+        .menu li {
+            display: block;
+            margin-bottom: 17px;
+        }
+        header{
+            padding: 16px 0;
+            background: black
+        }
+        .menu,header .details{
+            display: none ;
+        }
+        .page.s_heading{
+            font-size: 25px;
+        }
+        .content_details h1 {
+            font-size: 40px;
+        }
+        .s_heading {
+            font-size: 35px;
+        }
+        .info{
+            display: none
+        }
+        .details{
+            margin-bottom: 27px;
+        }
+        .footer_content {
+            margin-bottom: 33px;
+        }
+        .footer_content p {
+            font-size: 17px;
+        }
+        .col-md-6.custom {
+            margin-left: 0;
+        }
+        .slide_content h1 {
+            font-size: 61px;
+        }
+        .invite_area p:last-child {
+            width: 80%;
+        }
+        
+    }
+
+    @media (max-width: 576px) {  
+        .dish_info h6 {
+            width: 80%;
+        }
+        .dish_info h6 span:last-child {
+            float: none;
+            position: absolute;
+            right: 25px;
+            top:0
+        }
+        
+    }
