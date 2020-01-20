@@ -1,4 +1,4 @@
 ## ReactRestaurantWebsite
 A Restaurent website 
-### GraphCms + React
+### GraphCms + GraphQL + React
 [Demo](https://reeactrestaurent.netlify.com/)
